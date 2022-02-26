@@ -1,0 +1,115 @@
+
+/* zerando formatação padrão*/
+* {
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* estilo do body*/
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #bc4e9c, #cd4695, #dd3c8b, #ec327e, #f8286f);
+}
+
+/* estilo da logo*/
+.logo{
+    max-width: 600px;
+    margin-bottom: 24px;
+}
+
+/*estilo do container input*/
+.container-input{
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+/* estilo span*/
+.container-input span{
+    color: #fff;
+    font-size: 22px;
+}
+
+/* estilo do slider*/
+
+.slider{
+    -webkit-appearance:none;
+    width: 100%;
+    border-radius: 7px;
+    background: rgb(0, 0, 0, 0.5);
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+}
+
+/* estilo do button*/
+
+.button-cta{
+    height: 40px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    margin-top: 40px;
+}
+
+.button-cta:hover{
+    background-image: linear-gradient(to right, #1e130c, #4b2217, #812c28, #bb2e45, #f8286f);
+    color: #fff;
+}
+
+/* estilo container password*/
+
+.container-password{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    color: white;
+}
+
+.container-password span{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 1px;
+}
+
+#password{
+    background: rgb(0, 0, 0, 0.5);
+    height: 40px;
+    color: white;
+    border: 2px solid #3872ac;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+
+#password:hover{
+    transform: scale(1.1);
+}
+
+.hide{
+    display: none;
+}
+
+/* estilo do tooltip*/
+
+.tooltip{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.container-password:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
